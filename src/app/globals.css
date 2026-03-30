@@ -46,75 +46,105 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Pokopia nature theme colors */
+  --color-pokopia-green: #4ade80;
+  --color-pokopia-green-dark: #16a34a;
+  --color-pokopia-yellow: #fbbf24;
+  --color-pokopia-yellow-light: #fef3c7;
+  --color-pokopia-cream: #fefce8;
+  --color-pokopia-sky: #7dd3fc;
+  --color-pokopia-pink: #f9a8d4;
+  --color-pokopia-brown: #a16207;
+
+  /* Pokemon type colors */
+  --color-type-normal: #a8a77a;
+  --color-type-fire: #ee8130;
+  --color-type-water: #6390f0;
+  --color-type-electric: #f7d02c;
+  --color-type-grass: #7ac74c;
+  --color-type-ice: #96d9d6;
+  --color-type-fighting: #c22e28;
+  --color-type-poison: #a33ea1;
+  --color-type-ground: #e2bf65;
+  --color-type-flying: #a98ff3;
+  --color-type-psychic: #f95587;
+  --color-type-bug: #a6b91a;
+  --color-type-rock: #b6a136;
+  --color-type-ghost: #735797;
+  --color-type-dragon: #6f35fc;
+  --color-type-dark: #705746;
+  --color-type-steel: #b7b7ce;
+  --color-type-fairy: #d685ad;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.98 0.005 100);
+  --foreground: oklch(0.25 0.02 60);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.25 0.02 60);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.25 0.02 60);
+  --primary: oklch(0.55 0.16 145);
+  --primary-foreground: oklch(0.98 0.005 100);
+  --secondary: oklch(0.95 0.02 100);
+  --secondary-foreground: oklch(0.30 0.03 60);
+  --muted: oklch(0.95 0.01 90);
+  --muted-foreground: oklch(0.50 0.02 60);
+  --accent: oklch(0.92 0.04 95);
+  --accent-foreground: oklch(0.30 0.03 60);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --border: oklch(0.90 0.02 95);
+  --input: oklch(0.90 0.02 95);
+  --ring: oklch(0.60 0.16 145);
+  --chart-1: oklch(0.60 0.16 145);
+  --chart-2: oklch(0.75 0.15 80);
+  --chart-3: oklch(0.65 0.12 200);
+  --chart-4: oklch(0.70 0.10 330);
+  --chart-5: oklch(0.55 0.14 280);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.97 0.01 100);
+  --sidebar-foreground: oklch(0.25 0.02 60);
+  --sidebar-primary: oklch(0.55 0.16 145);
+  --sidebar-primary-foreground: oklch(0.98 0.005 100);
+  --sidebar-accent: oklch(0.93 0.03 95);
+  --sidebar-accent-foreground: oklch(0.30 0.03 60);
+  --sidebar-border: oklch(0.90 0.02 95);
+  --sidebar-ring: oklch(0.60 0.16 145);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.18 0.01 140);
+  --foreground: oklch(0.93 0.01 100);
+  --card: oklch(0.22 0.015 140);
+  --card-foreground: oklch(0.93 0.01 100);
+  --popover: oklch(0.22 0.015 140);
+  --popover-foreground: oklch(0.93 0.01 100);
+  --primary: oklch(0.70 0.16 145);
+  --primary-foreground: oklch(0.18 0.01 140);
+  --secondary: oklch(0.28 0.02 140);
+  --secondary-foreground: oklch(0.90 0.01 100);
+  --muted: oklch(0.28 0.015 140);
+  --muted-foreground: oklch(0.65 0.02 100);
+  --accent: oklch(0.30 0.025 140);
+  --accent-foreground: oklch(0.90 0.01 100);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --border: oklch(0.32 0.02 140);
+  --input: oklch(0.32 0.02 140);
+  --ring: oklch(0.60 0.16 145);
+  --chart-1: oklch(0.70 0.16 145);
+  --chart-2: oklch(0.75 0.15 80);
+  --chart-3: oklch(0.65 0.12 200);
+  --chart-4: oklch(0.70 0.10 330);
+  --chart-5: oklch(0.55 0.14 280);
+  --sidebar: oklch(0.20 0.01 140);
+  --sidebar-foreground: oklch(0.93 0.01 100);
+  --sidebar-primary: oklch(0.70 0.16 145);
+  --sidebar-primary-foreground: oklch(0.18 0.01 140);
+  --sidebar-accent: oklch(0.28 0.02 140);
+  --sidebar-accent-foreground: oklch(0.90 0.01 100);
+  --sidebar-border: oklch(0.32 0.02 140);
+  --sidebar-ring: oklch(0.60 0.16 145);
 }
 
 @layer base {
@@ -125,6 +155,72 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
   }
+}
+
+/* Pokemon type badge colors */
+@layer utilities {
+  .type-normal { background-color: var(--color-type-normal); color: white; }
+  .type-fire { background-color: var(--color-type-fire); color: white; }
+  .type-water { background-color: var(--color-type-water); color: white; }
+  .type-electric { background-color: var(--color-type-electric); color: #333; }
+  .type-grass { background-color: var(--color-type-grass); color: white; }
+  .type-ice { background-color: var(--color-type-ice); color: #333; }
+  .type-fighting { background-color: var(--color-type-fighting); color: white; }
+  .type-poison { background-color: var(--color-type-poison); color: white; }
+  .type-ground { background-color: var(--color-type-ground); color: #333; }
+  .type-flying { background-color: var(--color-type-flying); color: white; }
+  .type-psychic { background-color: var(--color-type-psychic); color: white; }
+  .type-bug { background-color: var(--color-type-bug); color: white; }
+  .type-rock { background-color: var(--color-type-rock); color: white; }
+  .type-ghost { background-color: var(--color-type-ghost); color: white; }
+  .type-dragon { background-color: var(--color-type-dragon); color: white; }
+  .type-dark { background-color: var(--color-type-dark); color: white; }
+  .type-steel { background-color: var(--color-type-steel); color: #333; }
+  .type-fairy { background-color: var(--color-type-fairy); color: white; }
+}
+
+/* Smooth animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out;
+  }
+  .animate-slide-in-right {
+    animation: slide-in-right 0.3s ease-out;
+  }
+  .animate-slide-out-right {
+    animation: slide-out-right 0.3s ease-in;
+  }
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-out-right {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }

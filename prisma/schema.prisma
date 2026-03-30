@@ -1,0 +1,169 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Pokemon {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String
+  nameJp        String?
+  dexNumber     Int?
+  type1         String
+  type2         String?
+  description   String?
+  specialty     String?
+  specialtyDesc String?
+  personality   String?
+  location      String?
+  region        String?
+  imageUrl      String?
+  isNpc         Boolean   @default(false)
+  npcRole       String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  habitats      PokemonHabitat[]
+  questRelations QuestPokemon[]
+}
+
+model Habitat {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  description   String?
+  background    String?
+  condition     String?
+  region        String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  pokemon       PokemonHabitat[]
+}
+
+model PokemonHabitat {
+  id          Int     @id @default(autoincrement())
+  pokemonId   Int
+  habitatId   Int
+  spawnNote   String?
+
+  pokemon     Pokemon @relation(fields: [pokemonId], references: [id])
+  habitat     Habitat @relation(fields: [habitatId], references: [id])
+}
+
+model Region {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  description   String?
+  unlockCondition String?
+  uniqueMaterials String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  materials     Material[]
+}
+
+model DreamIsland {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  description   String?
+  type          String?
+  rewards       String?
+  specialPokemon String?
+  resetCycle    String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Material {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  category      String?
+  description   String?
+  obtainMethod  String?
+  usedFor       String?
+  regionId      Int?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  region        Region?   @relation(fields: [regionId], references: [id])
+  recipes       RecipeMaterial[]
+}
+
+model Recipe {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  category      String?
+  description   String?
+  requiredSpecialty String?
+  craftTime     String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  materials     RecipeMaterial[]
+}
+
+model RecipeMaterial {
+  id          Int     @id @default(autoincrement())
+  recipeId    Int
+  materialId  Int
+  quantity    Int     @default(1)
+
+  recipe      Recipe   @relation(fields: [recipeId], references: [id])
+  material    Material @relation(fields: [materialId], references: [id])
+}
+
+model Quest {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  questType     String
+  giverPokemon  String?
+  description   String?
+  objectives    String?
+  rewards       String?
+  walkthrough   String?
+  prerequisite  String?
+  region        String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  relatedPokemon QuestPokemon[]
+}
+
+model QuestPokemon {
+  id        Int     @id @default(autoincrement())
+  questId   Int
+  pokemonId Int
+  role      String?
+
+  quest     Quest   @relation(fields: [questId], references: [id])
+  pokemon   Pokemon @relation(fields: [pokemonId], references: [id])
+}
+
+model Specialty {
+  id            Int       @id @default(autoincrement())
+  nameKo        String
+  nameEn        String?
+  description   String?
+  type          String?
+  teacherPokemon String?
+  effects       String?
+  imageUrl      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}

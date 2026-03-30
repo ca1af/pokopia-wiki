@@ -1,0 +1,2396 @@
+{
+  "metadata": {
+    "title": "Pokemon Pokopia (ぽこあポケモン / ぽこポケ) - Complete Habitat Data from Japanese Sources",
+    "description": "Cross-verification data collected from Japanese game guide sites for habitat research",
+    "collection_date": "2026-03-27",
+    "total_habitats": 212,
+    "standard_habitats": 209,
+    "event_habitats": 3,
+    "sources": [
+      {
+        "name": "GameWith",
+        "url": "https://gamewith.jp/pocoapokemon/545406",
+        "description": "全212種の生息地図鑑一覧 - Complete 212 habitat dex list",
+        "data_quality": "high",
+        "notes": "Contains JavaScript data structure window.wmt.habitatDatas with full habitat info"
+      },
+      {
+        "name": "Game8 (Japanese)",
+        "url": "https://game8.jp/pocoapokemon/767403",
+        "description": "生息地図鑑と出現ポケモン・全212種網羅 - Habitat dex with appearing Pokemon, all 212 types",
+        "data_quality": "high"
+      },
+      {
+        "name": "Game8 (English)",
+        "url": "https://game8.co/games/Pokemon-Pokopia/archives/582463",
+        "description": "Habitat Dex: How to Build All Habitats - English version with detailed requirements",
+        "data_quality": "high"
+      },
+      {
+        "name": "AppMedia",
+        "url": "https://appmedia.jp/pocoapokemon/79811225",
+        "description": "生息地図鑑一覧 - Habitat dex list",
+        "data_quality": "medium"
+      },
+      {
+        "name": "Serebii",
+        "url": "https://www.serebii.net/pokemonpokopia/habitats.shtml",
+        "description": "Complete English habitat names list with descriptions for all 209+3 habitats",
+        "data_quality": "high"
+      },
+      {
+        "name": "ポケらく (Pokeraku)",
+        "url": "https://pokemongo-raku.com/post147489",
+        "description": "生息地一覧＆出現ポケモン - Habitat list with appearing Pokemon",
+        "data_quality": "medium"
+      },
+      {
+        "name": "Gamepedia Tools",
+        "url": "https://toolz.gamepedia.jp/pocoapokemon/zukan/habitat",
+        "description": "Interactive habitat database tool (under construction)",
+        "data_quality": "low"
+      },
+      {
+        "name": "トゴハチゲームラボ (Togohachi)",
+        "url": "https://togohachi.com/ぽこあポケモン攻略メモ-生息地とポケモン一覧/",
+        "description": "生息地とポケモン一覧 - Comprehensive habitat and Pokemon list",
+        "data_quality": "medium"
+      },
+      {
+        "name": "Nintendo Life",
+        "url": "https://www.nintendolife.com/guides/pokemon-pokopia-complete-pokedex-all-pokemon-habitats",
+        "description": "Complete Pokédex, All Pokémon Habitats guide",
+        "data_quality": "high"
+      },
+      {
+        "name": "PokopiaCenter",
+        "url": "https://pokopia.center/posts/pokopia-all-habitats-pokemon-list-2026/",
+        "description": "All Habitats — Complete List with Pokemon Per Habitat",
+        "data_quality": "medium"
+      }
+    ],
+    "additional_resources": [
+      "https://www.pockettactics.com/pokemon-pokopia/habitats",
+      "https://www.gamespot.com/gallery/pokemon-pokopia-habitat-dex-how-to-create-all-habitats/2900-7560/",
+      "https://gamerant.com/pokemon-pokopia-all-habitats-complete-habitat-dex-list/",
+      "https://pokopia.wiki.fextralife.com/Habitats",
+      "https://www.thegamer.com/pokemon-pokopia-every-habitat-how-build/",
+      "https://www.pokeos.com/pokopia/habitats",
+      "https://www.dexerto.com/wikis/pokopia/habitat-dex/",
+      "https://gamefaqs.gamespot.com/boards/559184-pokemon-pokopia/81123442",
+      "https://www.famitsu.com/article/202603/68730"
+    ],
+    "game_info": {
+      "japanese_title": "ぽこ あ ポケモン",
+      "japanese_abbreviation": "ぽこポケ",
+      "english_title": "Pokémon Pokopia",
+      "platform": "Nintendo Switch 2"
+    }
+  },
+  "habitat_system_overview": {
+    "description_ja": "様々なオブジェクトの組み合わせでポケモンの「生息地」を作り出すことで新たなポケモンが登場する",
+    "description_en": "Create habitats by placing specific combinations of grass, trees, rocks, furniture, and other items near each other to attract Pokemon",
+    "mechanics": {
+      "discovery": "Find Pokemon traces (sparkling areas with rainbow aura) while exploring islands to learn habitat requirements",
+      "building": "Place required items near each other - exact positions from Habitat Dex are not strictly required, but all specified items must be within a certain range",
+      "pokemon_appearance": "After building a habitat, Pokemon appear after a certain time has passed",
+      "conditions": "Some Pokemon require specific weather (sunny/rainy) or time of day (day/night) conditions",
+      "befriending": "When a Pokemon starts living in a habitat, it becomes their home; players can befriend them",
+      "hints": "Learn habitat requirements by: examining Pokemon traces, speaking with Pokemon, purchasing clues from Pokemon Center PC"
+    },
+    "cloud_island_exclusives": {
+      "note": "4 habitats can only be built on Cloud Islands",
+      "habitats": ["Sky Garden", "Starlight Roost", "Floating Reef", "Aurora Dome"]
+    }
+  },
+  "habitats": [
+    {
+      "id": 1,
+      "name_ja": "緑の草むら",
+      "name_en": "Tall Grass",
+      "serebii_description": "Four tufts of tall grass bunched together in a plot. The perfect hiding place for small Pokémon",
+      "required_items_ja": ["みどりのくさ×4"],
+      "required_items_en": ["Tall Grass x4"],
+      "pokemon": ["Bulbasaur", "Charmander", "Charizard", "Squirtle", "Oddish", "Geodude"],
+      "pokemon_ja": ["フシギダネ", "ヒトカゲ", "ゼニガメ", "ナゾノクサ", "イシツブテ"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 2,
+      "name_ja": "木かげの草むら",
+      "name_en": "Tree-shaded tall grass",
+      "serebii_description": "Shaded tall grass that stays cool, even in the midday sun. Pokémon might stop by to relax",
+      "required_items_ja": ["大きな木×1", "みどりのくさ×4"],
+      "required_items_en": ["Large Tree x1", "Tall Grass x4"],
+      "pokemon": ["Bellsprout", "Scyther", "Scizor", "Pinsir", "Heracross"],
+      "pokemon_ja": ["マダツボミ", "ストライク", "ハッサム", "ホシガリス", "カイロス", "ヘラクロス"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 3,
+      "name_ja": "岩かげの草むら",
+      "name_en": "Boulder-shaded tall grass",
+      "required_items_ja": ["みどりのくさ×4", "おおきないし×1"],
+      "required_items_en": ["Tall Grass x4", "Large boulder x1"],
+      "pokemon": ["Timburr", "Gurdurr", "Machop"],
+      "pokemon_ja": ["ドッコラー", "ワンリキー", "ドテッコツ"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 4,
+      "name_ja": "うるおう草むら",
+      "name_en": "Hydrated tall grass",
+      "required_items_ja": ["みどりのくさ×4", "みず×2"],
+      "required_items_en": ["Tall Grass x4", "Water x2"],
+      "pokemon": ["Squirtle", "Wartortle", "Blastoise", "Sliggoo", "Cramorant"],
+      "pokemon_ja": ["ゼニガメ", "ヌメイル", "ウッウ", "カメール", "カメックス"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 5,
+      "name_ja": "波打ちぎわの草むら",
+      "name_en": "Seaside tall grass",
+      "required_items_ja": ["みどりのくさ×4", "うみのみず×2"],
+      "required_items_en": ["Tall Grass x4", "Ocean Water x2"],
+      "pokemon": ["Slowpoke", "Slowbro", "Slowking"],
+      "pokemon_ja": ["ヤドン", "ヤドラン", "ヤドキング"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 6,
+      "name_ja": "高台の草むら",
+      "name_en": "Elevated tall grass",
+      "required_items_ja": ["みどりのくさ×4", "高いところ×1"],
+      "required_items_en": ["Tall Grass x4", "High-up location x1"],
+      "pokemon": ["Pidgey", "Pidgeotto", "Hoothoot", "Noctowl"],
+      "pokemon_ja": ["ポッポ", "ホーホー", "ピジョン", "ヨルノズク"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 7,
+      "name_ja": "照らされた草むら",
+      "name_en": "Illuminated tall grass",
+      "required_items_ja": ["草×4", "明かり×1"],
+      "required_items_en": ["Lighting x1", "Tall Grass x4"],
+      "pokemon": ["Venonat", "Venomoth"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 8,
+      "name_ja": "きれいな花畑",
+      "name_en": "Pretty flower bed",
+      "required_items_ja": ["はらっぱのはな×4"],
+      "required_items_en": ["Wildflowers x4"],
+      "pokemon": ["Pidgey", "Pidgeotto", "Hoothoot", "Combee", "Magby", "Eevee"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 9,
+      "name_ja": "木かげの花畑",
+      "name_en": "Tree-shaded flower bed",
+      "required_items_ja": ["はらっぱのはな×4", "きのみの木×1"],
+      "required_items_en": ["Wildflowers x4", "Berry Tree x1"],
+      "pokemon": ["Cacturne", "Goomy", "Vikavolt"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 10,
+      "name_ja": "うるおう花畑",
+      "name_en": "Hydrated flower bed",
+      "required_items_ja": ["はらっぱのはな×4", "みず×2"],
+      "required_items_en": ["Wildflowers x4", "Water x2"],
+      "pokemon": ["Volbeat", "Illumise"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 11,
+      "name_ja": "花いっぱいの景色",
+      "name_en": "Field of Flowers",
+      "required_items_ja": ["はらっぱのはな×8"],
+      "required_items_en": ["Wildflowers x8"],
+      "pokemon": ["Ivysaur", "Venusaur", "Vespiquen"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 12,
+      "name_ja": "高台の花畑",
+      "name_en": "Elevated flower bed",
+      "required_items_ja": ["はらっぱのはな×4", "高いところ×1"],
+      "required_items_en": ["Wildflowers x4", "High-up location x1"],
+      "pokemon": ["Paras", "Parasect"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 13,
+      "name_ja": "花に囲まれたお墓",
+      "name_en": "Grave with flowers",
+      "required_items_ja": ["はらっぱのはな×4", "はかいし×1"],
+      "required_items_en": ["Wildflowers x4", "Gravestone x1"],
+      "pokemon": ["Cubone", "Marowak"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 14,
+      "name_ja": "フラワーガーデン",
+      "name_en": "Flower garden",
+      "required_items_ja": ["いけがき×4", "はらっぱのはな×4"],
+      "required_items_en": ["Wildflowers x4", "Hedge x4"],
+      "pokemon": ["Paras", "Parasect"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 15,
+      "name_ja": "フレッシュ野菜畑",
+      "name_en": "Fresh Veggie Field",
+      "required_items_ja": ["野菜畑×8"],
+      "required_items_en": ["Vegetable field x8"],
+      "pokemon": ["Drilbur", "Excadrill"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 16,
+      "name_ja": "あたたかな風に乗って",
+      "name_en": "Riding warm updrafts",
+      "required_items_ja": ["たき火×3"],
+      "required_items_en": ["Campfire x3"],
+      "pokemon": ["Drifloon"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 17,
+      "name_ja": "キャンプセット",
+      "name_en": "Campsite",
+      "required_items_ja": ["たき火×1", "ほしくさのテーブル×1", "ほしくさのこしかけ×1"],
+      "required_items_en": ["Campfire x1", "Straw Stool x1", "Straw Table x1"],
+      "pokemon": ["Charmeleon"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 18,
+      "name_ja": "修行の滝",
+      "name_en": "Training waterfall",
+      "required_items_ja": ["イス×1", "みず×2", "たき×1"],
+      "required_items_en": ["Seat x1", "Water x2", "Waterfall x1"],
+      "pokemon": ["Tyrogue"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 19,
+      "name_ja": "腹ペコダイニング",
+      "name_en": "Tantalizing dining set",
+      "required_items_ja": ["クラボのみ×1", "つくえ×1", "木のこしかけ×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Plated food x1"],
+      "pokemon": ["Gulpin"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 20,
+      "name_ja": "ピクニックな食卓",
+      "name_en": "Picnic Set",
+      "required_items_ja": ["イス×2", "つくえ×1", "バスケット×1"],
+      "required_items_en": ["Picnic Basket x1", "Seat x2", "Table x1"],
+      "pokemon": ["Pichu", "Pikachu"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 21,
+      "name_ja": "はなやかな机",
+      "name_en": "Flowery table",
+      "required_items_ja": ["イス×1", "つくえ×1", "いちりんざし×1"],
+      "required_items_en": ["Small Vase x1", "Seat x1", "Table x1"],
+      "pokemon": ["Weepinbell", "Victreebel"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 22,
+      "name_ja": "緑のベンチ",
+      "name_en": "Bench with greenery",
+      "required_items_ja": ["いけがき×2", "イス(長いもの)×1"],
+      "required_items_en": ["Hedge x2", "Seat (wide) x1"],
+      "pokemon": ["Bulbasaur", "Ivysaur", "Tangrowth"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 23,
+      "name_ja": "照らされたベンチ",
+      "name_en": "Illuminated bench",
+      "required_items_ja": ["イス(長いもの)×1", "がいとう×1"],
+      "required_items_en": ["Streetlight x1", "Seat (wide) x1"],
+      "pokemon": ["Venonat", "Venomoth"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 24,
+      "name_ja": "ジムの休けい所",
+      "name_en": "Exercise resting spot",
+      "required_items_ja": ["サンドバッグ×1", "イス×1"],
+      "required_items_en": ["Punching Bag x1", "Seat x1"],
+      "pokemon": ["Hitmonchan"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 25,
+      "name_ja": "かけこみ救急所",
+      "name_en": "Urgent Care",
+      "required_items_ja": ["イス×1", "つくえ×1", "きゅうきゅうばこ×1"],
+      "required_items_en": ["First Aid Kit x1", "Seat x1", "Table x1"],
+      "pokemon": ["Hitmonlee"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 26,
+      "name_ja": "ジムの救急所",
+      "name_en": "Gym first aid",
+      "required_items_ja": ["きゅうきゅうばこ×1", "サンドバッグ×1", "つくえ×1"],
+      "required_items_en": ["First Aid Kit x1", "Punching Bag x1", "Table x1"],
+      "pokemon": ["Hitmontop"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 27,
+      "name_ja": "道案内のカンバン",
+      "name_en": "Road Sign",
+      "required_items_ja": ["やじるしかんばん×1", "木のみち×3"],
+      "required_items_en": ["Wooden Path x3", "Arrow Sign x1"],
+      "pokemon": ["West Sea Shellos", "East Sea Shellos"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 28,
+      "name_ja": "大きな荷物をのせて",
+      "name_en": "Large luggage carrier",
+      "required_items_ja": ["にぐるま×1", "木ばこ×2"],
+      "required_items_en": ["Cart x1", "Wooden Crate x2"],
+      "pokemon": ["Gurdurr", "Tinkatink", "Tinkatuff"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 29,
+      "name_ja": "木こりの作業場",
+      "name_en": "Lumberjack's workplace",
+      "required_items_ja": ["まるたのイス×1", "にぐるま×1", "きりかぶ×1", "まるたのテーブル×1"],
+      "required_items_en": ["Log Chair x1", "Cart x1", "Log Table x1", "Tree stump x1"],
+      "pokemon": ["Axew", "Fraxure", "Haxorus"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 30,
+      "name_ja": "ぬいぐるみとおやすみ",
+      "name_en": "Bed with a plush",
+      "required_items_ja": ["ベッド×1", "ぬいぐるみ×1"],
+      "required_items_en": ["Doll x1", "Bed x1"],
+      "pokemon": ["Slowbro", "Slowking", "Drifloon", "Munchlax"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 31,
+      "name_ja": "やさしい光でおやすみ",
+      "name_en": "Gently lit bed",
+      "required_items_ja": ["ベッド×1", "つくえ×1", "ほそながキャンドル×1"],
+      "required_items_en": ["Slender Candle x1", "Table x1", "Bed x1"],
+      "pokemon": ["Hoothoot", "Noctowl"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 32,
+      "name_ja": "お墓にお供えもの",
+      "name_en": "Grave offering",
+      "required_items_ja": ["はかいし×1", "ほそながキャンドル×2", "皿にのせた食べ物×1"],
+      "required_items_en": ["Gravestone x1", "Slender Candle x2", "Plated food x1"],
+      "pokemon": ["Litwick", "Lampent"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 33,
+      "name_ja": "ブキミなお墓にお供えもの",
+      "name_en": "Creepy grave offering",
+      "required_items_ja": ["あやしいキャンドル×2", "はかいし×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Eerie Candle x2", "Gravestone x1", "Plated food x1"],
+      "pokemon": ["Litwick", "Lampent", "Chandelure"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 34,
+      "name_ja": "ラッキー休憩所",
+      "name_en": "Chansey Resting area",
+      "required_items_ja": ["いけがき×6", "イス(長いもの)×1", "ラッキーそう×1"],
+      "required_items_en": ["Hedge x6", "Seat (wide) x1", "Chansey Plant x1"],
+      "pokemon": ["Vileplume", "Bellossom"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 35,
+      "name_ja": "明かりと香りのユウワク",
+      "name_en": "Irresistible scent and glow",
+      "required_items_ja": ["ウツボカズラのはち×1", "キノコのランプ×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Pitcher-Plant Pot x1", "Mushroom Lamp x1", "Plated food x1"],
+      "pokemon": ["Weepinbell", "Victreebel"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 36,
+      "name_ja": "日かげでプカプカ水遊び",
+      "name_en": "Floating in the shade",
+      "required_items_ja": ["ビニールボート×1", "みず×2", "ビーチパラソル×1"],
+      "required_items_en": ["Inflatable Boat x1", "Beach Parasol x1", "Water x2"],
+      "pokemon": ["Blastoise"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 37,
+      "name_ja": "さらさらな草むら",
+      "name_en": "Smooth tall grass",
+      "required_items_ja": ["かれたみどりのくさ×4", "さらさらいわ×1"],
+      "required_items_en": ["Smooth Rock x1", "Dry tall grass x4"],
+      "pokemon": ["Onix"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 38,
+      "name_ja": "工場の物置き",
+      "name_en": "Factory Storage",
+      "required_items_ja": ["がいとう×1", "そうさばん×1", "ドラムかん×1", "からまりコード×1"],
+      "required_items_en": ["Metal Drum x1", "Control Unit x1", "Jumbled Cords x1", "Streetlight x1"],
+      "pokemon": ["Magnemite"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 39,
+      "name_ja": "ぜいたくピヨピヨごはん",
+      "name_en": "Luxury chirp-chirp meal",
+      "required_items_ja": ["木のすばこ×1", "きのみいりバスケット×1"],
+      "required_items_en": ["Wooden Birdhouse x1", "Berry Basket x1"],
+      "pokemon": ["Pidgeot"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 40,
+      "name_ja": "きのみのごちそうキャンプ",
+      "name_en": "Berry-feast Campsite",
+      "required_items_ja": ["てるてるポワルン(晴れ)×2", "きのみいりバスケット×1", "キャンプファイヤー×1", "高いところ×1"],
+      "required_items_en": ["Castform Weather Charm x2 (Sun)", "Bonfire x1", "Berry Basket x1", "High-up location x1"],
+      "pokemon": ["Charizard"],
+      "weather_condition": "sunny",
+      "time_condition": null
+    },
+    {
+      "id": 41,
+      "name_ja": "あまごいスポット",
+      "name_en": "Rain Dance site",
+      "required_items_ja": ["てるてるポワルン(雨)×2", "皿にのせた食べ物×1"],
+      "required_items_en": ["Castform Weather Charm x2 (Rain)", "Plated food x1"],
+      "pokemon": ["Goomy"],
+      "weather_condition": "rainy",
+      "time_condition": null
+    },
+    {
+      "id": 42,
+      "name_ja": "にほんばれスポット",
+      "name_en": "Sunny Day site",
+      "required_items_ja": ["てるてるポワルン(晴れ)×2", "皿にのせた食べ物×1"],
+      "required_items_en": ["Castform Weather Charm x2 (Sun)", "Plated food x1"],
+      "pokemon": ["Cacnea"],
+      "weather_condition": "sunny",
+      "time_condition": null
+    },
+    {
+      "id": 43,
+      "name_ja": "はかせのオタカラ",
+      "name_en": "Professor's treasure trove",
+      "required_items_ja": ["はかせのオタカラ×1", "ベッド×1", "おとしもの(大きなもの)×4"],
+      "required_items_en": ["Bed x1", "Professor's Treasure Trove x1", "Lost relic (large) x4"],
+      "pokemon": ["Tangrowth (Professor Tangrowth)"],
+      "pokemon_special_form": "はかせモジャンボ",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 44,
+      "name_ja": "丸太の温もり",
+      "name_en": "Cozy log handicrafts",
+      "required_items_ja": ["まるたのイス×1", "まるたのテーブル×1", "まるたのベッド×1"],
+      "required_items_en": ["Log Chair x1", "Log Bed x1", "Log Table x1"],
+      "pokemon": ["Axew", "Fraxure", "Haxorus"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 45,
+      "name_ja": "きのみ大集合",
+      "name_en": "Very-berry space",
+      "required_items_ja": ["きのみなイス×1", "きのみなテーブル×1", "きのみなベッド×1", "きのみなテーブルランプ×1"],
+      "required_items_en": ["Berry Chair x1", "Berry Bed x1", "Berry Table x1", "Berry Table Lamp x1"],
+      "pokemon": ["Goodra"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 46,
+      "name_ja": "ガーデンテラス",
+      "name_en": "Garden Terrace",
+      "required_items_ja": ["はらっぱのはな×4", "ガーデンチェア×1", "ガーデンライト×1", "ガーデンテーブル×1"],
+      "required_items_en": ["Wildflowers x4", "Garden Chair x1", "Garden Light x1", "Garden Table x1"],
+      "pokemon": ["Venusaur"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 47,
+      "name_ja": "木かげでぐっすりカビゴン",
+      "name_en": "Tree-shaded snoozing Snorlax",
+      "required_items_ja": ["大きな木×1", "いねむりベッド×1"],
+      "required_items_en": ["Large Tree x1", "Naptime Bed x1"],
+      "pokemon": ["Munchlax", "Snorlax"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 48,
+      "name_ja": "古きよきアンティーク",
+      "name_en": "Good old-fashioned antiques",
+      "required_items_ja": ["アンティーククローゼット×1", "アンティークベッド×1", "アンティークドレッサー×1", "アンティークチェア×1"],
+      "required_items_en": ["Antique Dresser x1", "Antique Chair x1", "Antique Closet x1", "Antique Bed x1"],
+      "pokemon": ["Weezing", "Snorlax"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 49,
+      "name_ja": "モンスターボールだらけ",
+      "name_en": "Nothin' but Poke Balls",
+      "required_items_ja": ["モンスターボールソファ×1", "モンスターボールベッド×1", "モンスターボールテーブル×1", "モンスターボールライト×1"],
+      "required_items_en": ["Poke Ball Sofa x1", "Poke Ball Bed x1", "Poke Ball Table x1", "Poke Ball Light x1"],
+      "pokemon": ["Tangela"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 50,
+      "name_ja": "黄色の草むら",
+      "name_en": "Yellow tall grass",
+      "required_items_ja": ["きいろのくさ×4"],
+      "required_items_en": ["Yellow Tall Grass x4"],
+      "pokemon": ["Spinarak", "Ariados", "Grubbin"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 51,
+      "name_ja": "木かげの黄色の草むら",
+      "name_en": "Tree-shaded Yellow tall grass",
+      "required_items_ja": ["大きな木×1", "きいろのくさ×4"],
+      "required_items_en": ["Yellow Tall Grass x4", "Large Tree x1"],
+      "pokemon": ["Zubat", "Golbat", "Makuhita", "Hariyama"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 52,
+      "name_ja": "高台の黄色の草むら",
+      "name_en": "Elevated yellow tall grass",
+      "required_items_ja": ["きいろのくさ×4", "高いところ×1"],
+      "required_items_en": ["Yellow Tall Grass x4"],
+      "pokemon": ["Crobat", "Wingull", "Pelipper"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 53,
+      "name_ja": "うるおう黄色の草むら",
+      "name_en": "Hydrated yellow tall grass",
+      "required_items_ja": ["きいろのくさ×4", "みず×2"],
+      "required_items_en": ["Yellow Tall Grass x4", "Water x2"],
+      "pokemon": ["Azurill", "Marill", "Piplup", "Prinplup"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 54,
+      "name_ja": "沼地の草むら",
+      "name_en": "Marshy tall grass",
+      "required_items_ja": ["きいろのくさ×4", "どろみず×2"],
+      "required_items_en": ["Yellow Tall Grass x4", "Muddy Water x2"],
+      "pokemon": ["Paldean Wooper", "Clodsire"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 55,
+      "name_ja": "草むらの自販機",
+      "name_en": "Overgrowth vending machine",
+      "required_items_ja": ["きいろのくさ×4", "じどうはんばいき×1"],
+      "required_items_en": ["Yellow Tall Grass x4", "Vending Machine x1"],
+      "pokemon": ["Mareep"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 56,
+      "name_ja": "すずしげな花畑",
+      "name_en": "Breezy flower bed",
+      "required_items_ja": ["うみべのはな×4"],
+      "required_items_en": ["Seashore Flowers x4"],
+      "pokemon": ["Zorua", "Zoroark", "Pawmi"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 57,
+      "name_ja": "南国気分",
+      "name_en": "Tropical vibes",
+      "required_items_ja": ["おおきなヤシの木×1", "うみべのはな×4"],
+      "required_items_en": ["Seashore Flowers x4", "Large palm tree x1"],
+      "pokemon": ["Gloom", "Exeggcute", "Exeggutor"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 58,
+      "name_ja": "風の花畑",
+      "name_en": "Windy Flower Bed",
+      "required_items_ja": ["風力はつでんマシン×1", "うみべのはな×4"],
+      "required_items_en": ["Seashore Flowers x4", "Windmill Kit x1"],
+      "pokemon": ["Wingull", "Pelipper"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 59,
+      "name_ja": "ビーチの木かげ",
+      "name_en": "Shaded beach",
+      "required_items_ja": ["おおきなヤシの木×1", "ビーチチェア×1"],
+      "required_items_en": ["Beach Chair x1", "Large palm tree x1"],
+      "pokemon": ["Exeggcute", "Exeggutor"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 60,
+      "name_ja": "トロピカルシーサイド",
+      "name_en": "Tropical seaside",
+      "required_items_ja": ["おおきなヤシの木×1", "いけがき×4", "うみのみず×2"],
+      "required_items_en": ["Hedge x4", "Large palm tree x1", "Ocean water x2"],
+      "pokemon": ["Lapras"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 61,
+      "name_ja": "お休みどころ",
+      "name_en": "Resting spot",
+      "required_items_ja": ["だんボールのはこ×1", "ほしくさのベッド×1"],
+      "required_items_en": ["Cardboard Boxes x1", "Straw Bed x1"],
+      "pokemon": ["Meowth"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 62,
+      "name_ja": "おかたづけをしよう",
+      "name_en": "Perpetual mess",
+      "required_items_ja": ["だんボールのはこ×1", "おもちゃ×2"],
+      "required_items_en": ["Cardboard Boxes x1", "Toy x2"],
+      "pokemon": ["Growlithe", "Azurill"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 63,
+      "name_ja": "ゴミ集積所",
+      "name_en": "Trash collection site",
+      "required_items_ja": ["ゴミ入れ×1", "かんばん×1", "ゴミぶくろ×1"],
+      "required_items_en": ["Garbage Bags x1", "Waste Bin x1", "Sign x1"],
+      "pokemon": ["Koffing", "Weezing", "Trubbish", "Garbodor"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 64,
+      "name_ja": "ゴミ箱がいっぱい",
+      "name_en": "Trash can central",
+      "required_items_ja": ["ゴミばこ×4"],
+      "required_items_en": ["Garbage Bin x4"],
+      "pokemon": ["Magneton", "Magnezone", "Electabuzz"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 65,
+      "name_ja": "ゴミ捨て場",
+      "name_en": "Trash disposal site",
+      "required_items_ja": ["でんちゅう×1", "ゴミぶくろ×1"],
+      "required_items_en": ["Garbage Bags x1", "Utility Pole x1"],
+      "pokemon": ["Crobat"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 66,
+      "name_ja": "公園のベンチ",
+      "name_en": "Park bench",
+      "required_items_ja": ["イス(長いもの)×1", "ゴミばこ×1"],
+      "required_items_en": ["Garbage Bin x1", "Seat (wide) x1"],
+      "pokemon": ["Zubat", "Voltorb", "Electrode"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 67,
+      "name_ja": "腹ペコレストラン",
+      "name_en": "Tantalizing restaurant",
+      "required_items_ja": ["イス×1", "メニューボード×1", "つくえ×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Menu Board x1", "Seat x1", "Table x1", "Plated food x1"],
+      "pokemon": ["Pawmi", "Pawmo"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 68,
+      "name_ja": "お料理をお届け",
+      "name_en": "Tableside delivery cart",
+      "required_items_ja": ["シックなイス×2", "シックなテーブル×1", "いちりんざし×1", "ワゴン×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Chic Chair x2", "Chic Table x1", "Small Vase x1", "Push Cart x1", "Plated food x1"],
+      "pokemon": ["Empoleon"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 69,
+      "name_ja": "ピヨピヨごはん",
+      "name_en": "Chirp-chirp meal",
+      "required_items_ja": ["木のすばこ×1", "つくえ×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Wooden Birdhouse x1", "Table x1", "Plated food x1"],
+      "pokemon": ["Torchic", "Blaziken"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 70,
+      "name_ja": "カフェスペース",
+      "name_en": "Café space",
+      "required_items_ja": ["イス×2", "はち植えの木×1", "カウンターのだい×2", "マグカップ×1", "メニューボード×1"],
+      "required_items_en": ["Mug x1", "Counter x2", "Menu Board x1", "Seat x2", "Potted Plant x1"],
+      "pokemon": ["Pawmi", "Pawmo"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 71,
+      "name_ja": "ビーチセット",
+      "name_en": "Beach Set",
+      "required_items_ja": ["ビーチチェア×1", "ビーチパラソル×1", "サイドテーブル×1"],
+      "required_items_en": ["Beach Chair x1", "Beach Parasol x1", "Side Table x1"],
+      "pokemon": ["Curly Form Tatsugiri", "Droopy Form Tatsugiri", "Stretchy Form Tatsugiri"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 72,
+      "name_ja": "ライトアップステージ",
+      "name_en": "Light-up stage",
+      "required_items_ja": ["スポットライト×2", "ステージだい×1"],
+      "required_items_en": ["Spotlight x2", "Small Stage x1"],
+      "pokemon": ["Electabuzz"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 73,
+      "name_ja": "しかけにご注意",
+      "name_en": "Surprise in store",
+      "required_items_ja": ["ふうせん×2", "びっくりばこ×1"],
+      "required_items_en": ["Balloons x2", "Boo-In-The-Box x1"],
+      "pokemon": ["Haunter", "Gengar", "Zoroark"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 74,
+      "name_ja": "夜のお祭り会場",
+      "name_en": "Night festival venue",
+      "required_items_ja": ["ふうせん×2", "ライチュウかんばん×1"],
+      "required_items_en": ["Raichu Sign x1", "Balloons x2"],
+      "pokemon": ["Flaaffy"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 75,
+      "name_ja": "お着がえスペース",
+      "name_en": "Changing area",
+      "required_items_ja": ["クローゼット×1", "かがみ(大きなもの)×1"],
+      "required_items_en": ["Closet x1", "Mirror (Large) x1"],
+      "pokemon": ["Minccino"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 76,
+      "name_ja": "おめかし中は　見ないで",
+      "name_en": "Private makeup stand",
+      "required_items_ja": ["ついたて×2", "クローゼット×1", "ドレッサー×1"],
+      "required_items_en": ["Partition x2", "Dresser x1", "Closet x1"],
+      "pokemon": ["Minccino", "Cinccino"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 77,
+      "name_ja": "毛糸で編み物",
+      "name_en": "Knitting station",
+      "required_items_ja": ["イス×1", "つくえ×1", "あみものキット×1"],
+      "required_items_en": ["Seat x1", "Table x1"],
+      "pokemon": ["Mareep", "Flaaffy"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 78,
+      "name_ja": "温泉の洗い場",
+      "name_en": "Hot-spring shower",
+      "required_items_ja": ["シャワー×1", "イス×1", "温泉×2"],
+      "required_items_en": ["Shower x1", "Seat x1", "Hot-spring water x2"],
+      "pokemon": ["Psyduck", "Golduck"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 79,
+      "name_ja": "リゾートでご飯のしたく",
+      "name_en": "Resort meal prep",
+      "required_items_ja": ["おおきなヤシの木×1", "イス×1", "皿にのせた食べ物×1", "たき火×1"],
+      "required_items_en": ["Campfire x1", "Seat x1", "Large palm tree x1", "Plated food x1"],
+      "pokemon": ["Growlithe", "Torchic", "Combusken"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 80,
+      "name_ja": "荷づくりできたよ",
+      "name_en": "All packed up",
+      "required_items_ja": ["にぐるま×1", "だんボールのはこ×2"],
+      "required_items_en": ["Cart x1", "Cardboard Boxes x2"],
+      "pokemon": ["Farfetch'd", "Makuhita", "Hariyama"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 81,
+      "name_ja": "完治まで おやすみ",
+      "name_en": "Full recovery",
+      "required_items_ja": ["ベッド×1", "ナチュラルなチェスト×1", "きゅうきゅうばこ×1"],
+      "required_items_en": ["Plain Chest x1", "First Aid Kit x1", "Bed x1"],
+      "pokemon": ["Pikachu (Peakychu)", "Chansey"],
+      "pokemon_special_form": "ピカチュウ (おとどけピカチュウ)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 82,
+      "name_ja": "目覚ましベッドスペース",
+      "name_en": "Alarm clock sleep zone",
+      "required_items_ja": ["ベッド×1", "つくえ×1", "めざましどけい×1"],
+      "required_items_en": ["Alarm clock x1", "Table x1", "Bed x1"],
+      "pokemon": ["Happiny"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 83,
+      "name_ja": "自販機ヨコで一息",
+      "name_en": "Vending machine break area",
+      "required_items_ja": ["じどうはんばいき×1", "イス(長いもの)×1"],
+      "required_items_en": ["Vending Machine x1", "Seat (wide) x1"],
+      "pokemon": ["Grubbin", "Charjabug"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 84,
+      "name_ja": "自販機セット",
+      "name_en": "Vending machine set",
+      "required_items_ja": ["ゴミ入れ×1", "じどうはんばいき×1"],
+      "required_items_en": ["Vending Machine x1", "Waste Bin x1"],
+      "pokemon": ["Elekid", "Electivire"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 85,
+      "name_ja": "ミニゲームコーナー",
+      "name_en": "Mini Game Corner",
+      "required_items_ja": ["アーケードゲームマシン×1", "イス×1", "パンチングマシーン×1"],
+      "required_items_en": ["Seat x1", "Arcade Machine x1", "Punching Game x1"],
+      "pokemon": ["Magneton", "Magnezone"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 86,
+      "name_ja": "水力はつでん所",
+      "name_en": "Waterwheel Spot",
+      "required_items_ja": ["水力はつでんマシン×1", "たき×1", "みず×2"],
+      "required_items_en": ["Waterwheel Kit x1", "Water x1", "Waterfall x1"],
+      "pokemon": ["Prinplup", "Empoleon"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 87,
+      "name_ja": "火力はつでん所",
+      "name_en": "Furnace Spot",
+      "required_items_ja": ["ドラムかん×1", "ようこうろ×1"],
+      "required_items_en": ["Metal Drum x1", "Furnace Kit x1"],
+      "pokemon": ["Combusken", "Blaziken"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 88,
+      "name_ja": "船着き場",
+      "name_en": "Dock",
+      "required_items_ja": ["さんばし×4", "がいとう×1", "うみのみず×2"],
+      "required_items_en": ["Walkway x4", "Streetlight x1", "Ocean water x2"],
+      "pokemon": ["Marill", "Azumarill"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 89,
+      "name_ja": "あやしい書さい",
+      "name_en": "Spooky study",
+      "required_items_ja": ["ほんだな×1", "シックなソファ×1", "ナチュラルなテーブル×1", "ほそながキャンドル×1"],
+      "required_items_en": ["Bookcase x1", "Chic Sofa x1", "Plain Table x1", "Slender Candle x1"],
+      "pokemon": ["Gastly", "Haunter"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 90,
+      "name_ja": "ふなのりごっこ",
+      "name_en": "Playing pirate",
+      "required_items_ja": ["たる×2", "ふねのハンドル×1", "うちあげづつ×2"],
+      "required_items_en": ["Barrel x2", "Ship's Wheel x1", "Cannon x2"],
+      "pokemon": ["Voltorb", "Electrode"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 91,
+      "name_ja": "レジでお会計",
+      "name_en": "Working the register",
+      "required_items_ja": ["つくえ×2", "レジスター×1"],
+      "required_items_en": ["Cash Register x1", "Table x2"],
+      "pokemon": ["Meowth", "Happiny", "Audino", "Mawile"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 92,
+      "name_ja": "ちいさなアトリエ",
+      "name_en": "Tiny Atelier",
+      "required_items_ja": ["キャンパス×1", "イス×1"],
+      "required_items_en": ["Seat x1", "Canvas x1"],
+      "pokemon": ["Smeargle (Smearguru)"],
+      "pokemon_special_form": "ドーブル (えかきドーブル)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 93,
+      "name_ja": "グルメなお供え物",
+      "name_en": "Gourmet's altar",
+      "required_items_ja": ["おそなえのだい×1"],
+      "required_items_en": ["Offering dish x1"],
+      "pokemon": ["Snorlax (Mosslax)"],
+      "pokemon_special_form": "カビゴン (コケカビゴン)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 94,
+      "name_ja": "ピカチュウスペース",
+      "name_en": "Pikachu space",
+      "required_items_ja": ["ピカチュウソファ×1", "ピカチュウにんぎょう×1"],
+      "required_items_en": ["Pikachu Sofa x1", "Pikachu Doll x1"],
+      "pokemon": ["Mimikyu"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 95,
+      "name_ja": "ベリーキュートな空間",
+      "name_en": "Cuteness overload",
+      "required_items_ja": ["キュートなソファ×1", "キュートなテーブル×1", "キュートランプ×1", "キュートなベッド×1", "キュートなドレッサー×1"],
+      "required_items_en": ["Cute Sofa x1", "Cute Table x1", "Cute Lamp x1", "Cute Bed x1", "Cute Dresser x1"],
+      "pokemon": ["Blissey"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 96,
+      "name_ja": "リゾートへようこそ",
+      "name_en": "Welcoming resort",
+      "required_items_ja": ["リゾートなソファ×1", "リゾートなテーブル×1", "リゾートなハンモック×1", "リゾートなライト×1"],
+      "required_items_en": ["Resort Sofa x1", "Resort Table x1", "Resort Hammock x1", "Resort Light x1"],
+      "pokemon": ["Absol"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 97,
+      "name_ja": "ナチュラルなくらし",
+      "name_en": "Plain life",
+      "required_items_ja": ["ナチュラルなベッド×1", "ナチュラルなソファ×1", "ナチュラルなテーブル×1", "ナチュラルなランプ×1"],
+      "required_items_en": ["Plain Bed x1", "Plain Sofa x1", "Plain Table x1", "Plain Lamp x1"],
+      "pokemon": ["Ampharos"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 98,
+      "name_ja": "赤い草むら",
+      "name_en": "Red tall grass",
+      "required_items_ja": ["あかいくさ×4"],
+      "required_items_en": ["Red Tall Grass x4"],
+      "pokemon": ["Kricketot", "Kricketune", "Riolu", "Scorbunny", "Cinderace"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 99,
+      "name_ja": "木かげの赤い草むら",
+      "name_en": "Tree-shaded red tall grass",
+      "required_items_ja": ["大きな木×1", "あかいくさ×4"],
+      "required_items_en": ["Red Tall Grass x4", "Large Tree x1"],
+      "pokemon": ["Diglett", "Dugtrio", "Bonsly", "Sudowoodo"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 100,
+      "name_ja": "三角木かげに岩と草むら",
+      "name_en": "Pointy tree-shaded rocky tall grass",
+      "required_items_ja": ["三角の木×1", "あかいくさ×4", "おおきないし×1"],
+      "required_items_en": ["Red Tall Grass x4", "Pointy tree x1", "Large boulder x1"],
+      "pokemon": ["Dartrix", "Decidueye"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 101,
+      "name_ja": "うるおう赤い草むら",
+      "name_en": "Hydrated red tall grass",
+      "required_items_ja": ["あかいくさ×4", "みず×2"],
+      "required_items_en": ["Red Tall Grass x4", "Water x2"],
+      "pokemon": ["Lotad", "Lombre"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 102,
+      "name_ja": "高台の赤い草むら",
+      "name_en": "Elevated red tall grass",
+      "required_items_ja": ["あかいくさ×4", "高いところ×1"],
+      "required_items_en": ["Red Tall Grass x4"],
+      "pokemon": ["Murkrow", "Honchkrow", "Chatot"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 103,
+      "name_ja": "草むらトレーニング場",
+      "name_en": "Grassy training field",
+      "required_items_ja": ["どのう×2", "あかいくさ×4"],
+      "required_items_en": ["Red Tall Grass x4", "Sandbags x2"],
+      "pokemon": ["Machoke", "Machamp"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 104,
+      "name_ja": "ゆうがな花畑",
+      "name_en": "Graceful flower bed",
+      "required_items_ja": ["いわばのはな×4"],
+      "required_items_en": ["Mountain Flowers x4"],
+      "pokemon": ["Cleffa", "Clefairy", "Clefable", "Fidough", "Dachsbun"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 105,
+      "name_ja": "木かげのゆうがな花畑",
+      "name_en": "Tree-shaded graceful flower bed",
+      "required_items_ja": ["三角の木×1", "いわばのはな×4"],
+      "required_items_en": ["Mountain Flowers x4"],
+      "pokemon": ["Murkrow", "Larvesta", "Volcarona"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 106,
+      "name_ja": "うるおうゆうがな花畑",
+      "name_en": "Hydrated graceful flower bed",
+      "required_items_ja": ["いわばのはな×4", "みず×2"],
+      "required_items_en": ["Mountain Flowers x4", "Water x2"],
+      "pokemon": ["Ekans", "Arbok", "Politoed"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 107,
+      "name_ja": "花畑の切り株ステージ",
+      "name_en": "Flower garden stump stage",
+      "required_items_ja": ["いわばのはな×4", "きりかぶ×1", "キノコのランプ×2"],
+      "required_items_en": ["Mountain Flowers x4", "Mushroom Lamp x2", "Tree stump x1"],
+      "pokemon": ["Igglybuff", "Jigglypuff", "Politoed"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 108,
+      "name_ja": "畑しごとは　たいへん",
+      "name_en": "Toil in the soil",
+      "required_items_ja": ["野菜畑×4", "ておしぐるま×1"],
+      "required_items_en": ["Wheelbarrow x1", "Vegetable field x4"],
+      "pokemon": ["Tyranitar"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 109,
+      "name_ja": "うきうきな水たまり",
+      "name_en": "Uplifting duckweed",
+      "required_items_ja": ["うきくさ×4", "みず×2"],
+      "required_items_en": ["Duckweed x4", "Water x2"],
+      "pokemon": ["Lotad", "Ludicolo"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 110,
+      "name_ja": "コケまみれ",
+      "name_en": "Mossy rest spot",
+      "required_items_ja": ["コケ×4"],
+      "required_items_en": ["Moss x4"],
+      "pokemon": ["Larvitar", "Tyranitar"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 111,
+      "name_ja": "コケまみれの岩",
+      "name_en": "Mossy boulder",
+      "required_items_ja": ["コケ×4", "こけいわ×1"],
+      "required_items_en": ["Moss x4", "Mossy boulder x1"],
+      "pokemon": ["Graveler", "Golem"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 112,
+      "name_ja": "コケむす温泉",
+      "name_en": "Mossy hot spring",
+      "required_items_ja": ["コケ×4", "温泉×2"],
+      "required_items_en": ["Moss x4", "Hot-spring water x2"],
+      "pokemon": ["Torkoal"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 113,
+      "name_ja": "露天風呂",
+      "name_en": "Open-air bath",
+      "required_items_ja": ["ゆぐち×1", "温泉×1"],
+      "required_items_en": ["Hot-Spring Spout x1", "Hot-spring water x2"],
+      "pokemon": ["Raboot"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 114,
+      "name_ja": "ととのう温泉",
+      "name_en": "Harmonious hot spring",
+      "required_items_ja": ["ゆぐち×1", "みずおけ×1", "温泉×2"],
+      "required_items_en": ["Hot-Spring Spout x1", "Water Basin x1", "Hot-spring water x2"],
+      "pokemon": ["Politoed"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 115,
+      "name_ja": "マグマでアツアツ",
+      "name_en": "Piping-hot lava",
+      "required_items_ja": ["アツアツいわ×1", "マグマ×2"],
+      "required_items_en": ["Molten rock x1", "Lava x2"],
+      "pokemon": ["Volcarona", "Charcadet"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 116,
+      "name_ja": "掘って燃やして",
+      "name_en": "Digging and burning",
+      "required_items_ja": ["ておしぐるま×1", "ようこうろ×1", "やまほりどうぐ×1"],
+      "required_items_en": ["Wheelbarrow x1", "Excavation Tools x1", "Smelting Furnace x1"],
+      "pokemon": ["Magmar"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 117,
+      "name_ja": "ガタゴト鉄骨工事",
+      "name_en": "Clink-clang iron construction",
+      "required_items_ja": ["鉄骨×3", "ておしぐるま×1", "どのう×1", "やまほりどうぐ×1"],
+      "required_items_en": ["Wheelbarrow x1", "Excavation Tools x1", "Sandbags x1", "Iron beam/column x3"],
+      "pokemon": ["Steelix", "Machamp"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 118,
+      "name_ja": "ブキミな白い岩",
+      "name_en": "Creepy white rocks",
+      "required_items_ja": ["たけのこいわ×1", "コケ×4", "木ばこ×1", "ランタン×1"],
+      "required_items_en": ["Moss x4", "Wooden Crate x1", "Lantern x1", "Stalagmites x1"],
+      "pokemon": ["Glimmet", "Glimmora"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 119,
+      "name_ja": "荷物置き場でつまみ食い",
+      "name_en": "Container snacking",
+      "required_items_ja": ["たる×1", "木ばこ×1", "ランタン×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Barrel x1", "Wooden Crate x1", "Lantern x1", "Plated food x1"],
+      "pokemon": ["Diglett", "Glimmet", "Glimmora"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 120,
+      "name_ja": "ワクワクな食卓",
+      "name_en": "Dinner table surprise",
+      "required_items_ja": ["イス(長いもの)×2", "つくえ(大きなもの)×1", "パーティープレート×4"],
+      "required_items_en": ["Party Platter x4", "Table (large) x1", "Seat (wide) x2"],
+      "pokemon": ["Swalot"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 121,
+      "name_ja": "パクパク パン工房",
+      "name_en": "Best bread bakery",
+      "required_items_ja": ["パンかま×1", "皿にのせた食べ物×1", "カウンターのだい×2"],
+      "required_items_en": ["Bread Oven x1", "Counter x2", "Plated food x1"],
+      "pokemon": ["Fidough", "Dachsbun"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 122,
+      "name_ja": "ミニキッチン",
+      "name_en": "Mini kitchen",
+      "required_items_ja": ["キッチンテーブル×1", "コンロ×1", "フライパン×1", "シンク×1"],
+      "required_items_en": ["Kitchen Table x1", "Cooking Stove x1", "Modern Sink x1", "Frying Pan x1"],
+      "pokemon": ["Magmortar"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 123,
+      "name_ja": "みんなでパーティー",
+      "name_en": "House party",
+      "required_items_ja": ["フードカウンター×1", "パーティーカップ×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Food Counter x1", "Paper Party Cups x1", "Plated food x1"],
+      "pokemon": ["Dugtrio", "Sudowoodo"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 124,
+      "name_ja": "のんびり写真を振り返り",
+      "name_en": "Lazy photo-album scrolling",
+      "required_items_ja": ["タブレット×1", "パーティーカップ×1"],
+      "required_items_en": ["Tablet x1", "Paper Party Cups x1"],
+      "pokemon": ["Toxel"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 125,
+      "name_ja": "さえずりのリサイタル",
+      "name_en": "Chirping recital",
+      "required_items_ja": ["とまり木×1", "スタンドマイク×1"],
+      "required_items_en": ["Perch x1", "Standing Mic x1"],
+      "pokemon": ["Honchkrow", "Chatot"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 126,
+      "name_ja": "リサイタルステージ",
+      "name_en": "Recital stage",
+      "required_items_ja": ["スピーカー×2", "ステージだい×1", "スタンドマイク×1"],
+      "required_items_en": ["Speaker x2", "Standing Mic x1", "Small Stage x1"],
+      "pokemon": ["Jigglypuff", "Wigglytuff"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 127,
+      "name_ja": "リズムに合わせてワンツー",
+      "name_en": "Box to the rhythm",
+      "required_items_ja": ["サンドバッグ×1", "つくえ×1", "CDプレーヤー×1"],
+      "required_items_en": ["Punching Bag x1", "CD Player x1", "Table x1"],
+      "pokemon": ["Machoke", "Riolu", "Lucario"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 128,
+      "name_ja": "音楽と読書",
+      "name_en": "Music and magazines",
+      "required_items_ja": ["CDプレーヤー×1", "CDラック×1", "ざっしだな×1"],
+      "required_items_en": ["CD Rack x1", "CD Player x1", "Magazine Rack x1"],
+      "pokemon": ["Kricketot", "Kricketune", "Rotom (DJ Rotom)"],
+      "pokemon_special_form": "ロトム (DJロトム)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 129,
+      "name_ja": "プチ博物館",
+      "name_en": "Mini museum",
+      "required_items_ja": ["しきり×3", "だいざ・てんじだい×1", "おとしもの(大きなもの)×1"],
+      "required_items_en": ["Exhibition Stand x1", "Post x3", "Lost relic (large) x1"],
+      "pokemon": ["Arcanine"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 130,
+      "name_ja": "さわやかロッカールーム",
+      "name_en": "Refreshing locker room",
+      "required_items_ja": ["オフィスのロッカー×2", "はち植えの木×1", "イス(長いもの)×1", "パンチングマシーン×1"],
+      "required_items_en": ["Punching Game x1", "Seat (wide) x1", "Potted Plant x1", "Office Locker x2"],
+      "pokemon": ["Raboot", "Cinderace"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 131,
+      "name_ja": "銅像の観光スポット",
+      "name_en": "Bronze landmark",
+      "required_items_ja": ["いけがき×4", "つきよのダンスそう×1", "かんばん×1"],
+      "required_items_en": ["Sign x1", "Moonlight Dance Statue Kit x1", "Hedge x4"],
+      "pokemon": ["Clefairy", "Clefable"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 132,
+      "name_ja": "ふみきり",
+      "name_en": "Railroad crossing",
+      "required_items_ja": ["せんろ×1", "しゃだんき×1"],
+      "required_items_en": ["Railway Track x1", "Crossing Gate x1"],
+      "pokemon": ["Rolycoly"],
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 133,
+      "name_ja": "シェフの調理場",
+      "name_en": "Chef's kitchen",
+      "required_items_ja": ["コンロ×1", "シンク×1", "ナチュラルなテーブル×1", "オシャレななべ×1", "まないた×1", "皿にのせた食べ物×1"],
+      "required_items_en": ["Cooking Stove x1", "Modern Sink x1", "Plain Table x1", "Fancy Pot x1", "Cutting Board x1", "Plated food x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 134,
+      "name_ja": "ザ・ゴージャス",
+      "name_en": "Absolute luxury",
+      "required_items_ja": ["ゴージャスなランプ×1", "ゴージャスなベッド×1", "ゴージャスなソファ×1", "ゴージャスなテーブル×1"],
+      "required_items_en": ["Gorgeous Lamp x1", "Gorgeous Bed x1", "Gorgeous Sofa x1", "Gorgeous Table x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 135,
+      "name_ja": "ずっしりアイアン",
+      "name_en": "Heavy iron",
+      "required_items_ja": ["てつのベッド×1", "てつのテーブル×1", "てつのイス×1", "ランタン×1"],
+      "required_items_en": ["Iron Bed x1", "Iron Table x1", "Iron Chair x1", "Lantern x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 136,
+      "name_ja": "モダンライフ",
+      "name_en": "Modern living",
+      "required_items_ja": ["インダストリアルなベッド×1", "インダストリアルなデスク×1", "インダストリアルなチェア×1"],
+      "required_items_en": ["Industrial Bed x1", "Industrial Desk x1", "Industrial Chair x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 137,
+      "name_ja": "ピンクの草むら",
+      "name_en": "Pink tall grass",
+      "required_items_ja": ["ピンクのくさ×4"],
+      "required_items_en": ["Pink Tall Grass x4"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 138,
+      "name_ja": "木かげのピンクの草むら",
+      "name_en": "Tree-shaded pink tall grass",
+      "required_items_ja": ["ピンクのくさ×4", "大きな木×1"],
+      "required_items_en": ["Pink Tall Grass x4", "Large Tree x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 139,
+      "name_ja": "うるおうピンクの草むら",
+      "name_en": "Hydrated pink tall grass",
+      "required_items_ja": ["ピンクのくさ×4", "みず×2"],
+      "required_items_en": ["Pink Tall Grass x4", "Water x2"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 140,
+      "name_ja": "高台のピンクの草むら",
+      "name_en": "Elevated pink tall grass",
+      "required_items_ja": ["ピンクのくさ×4", "高いところ×1"],
+      "required_items_en": ["Pink Tall Grass x4", "High-up location x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 141,
+      "name_ja": "土管の秘密基地",
+      "name_en": "Concrete pipe secret base",
+      "required_items_ja": ["どかん×3", "草×4"],
+      "required_items_en": ["Pipe x3", "Grass x4"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 142,
+      "name_ja": "フワフワな花畑",
+      "name_en": "Fluffy flower bed",
+      "required_items_ja": ["うきしまのはな×4"],
+      "required_items_en": ["Floating Island Flowers x4"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 143,
+      "name_ja": "木かげのフワフワな花畑",
+      "name_en": "Tree-shaded fluffy flower bed",
+      "required_items_ja": ["うきしまのはな×4", "大きな木×1"],
+      "required_items_en": ["Floating Island Flowers x4", "Large Tree x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 144,
+      "name_ja": "うるおうフワフワな花畑",
+      "name_en": "Hydrated fluffy flower bed",
+      "required_items_ja": ["うきしまのはな×4", "みず×2"],
+      "required_items_en": ["Floating Island Flowers x4", "Water x2"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 145,
+      "name_ja": "水辺の小舟",
+      "name_en": "Waterside dinghy",
+      "required_items_ja": ["カヌー×1", "うきくさ×2", "みず×2", "高いところ×1"],
+      "required_items_en": ["Canoe x1", "Duckweed x2", "Water x2", "High-up location x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 146,
+      "name_ja": "照らされた滝",
+      "name_en": "Illuminated waterfall",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Under investigation (調査中)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 147,
+      "name_ja": "さえずりガーデン",
+      "name_en": "Birdsong garden",
+      "required_items_ja": ["おしゃれないけがき×1", "木のすばこ×1"],
+      "required_items_en": ["Fancy Hedge x1", "Wooden Birdhouse x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 148,
+      "name_ja": "シンプルバスルーム",
+      "name_en": "Simple bathroom",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 149,
+      "name_ja": "サイクリング中に休憩",
+      "name_en": "Cycling rest stop",
+      "required_items_ja": ["じてんしゃ×1", "じどうはんばいき×1"],
+      "required_items_en": ["Bicycle x1", "Vending Machine x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 150,
+      "name_ja": "暖炉でうたた寝",
+      "name_en": "Fireplace nap spot",
+      "required_items_ja": ["いしのだんろ×1", "イス(長いもの)×1"],
+      "required_items_en": ["Stone Fireplace x1", "Seat (wide) x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 151,
+      "name_ja": "みなぎるサイコパワー",
+      "name_en": "Surging psychic power",
+      "required_items_ja": ["シンプルクッション×1", "すいしょうだま×1"],
+      "required_items_en": ["Simple Cushion x1", "Crystal Ball x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 152,
+      "name_ja": "水晶占い",
+      "name_en": "Fortune-teller's table",
+      "required_items_ja": ["イス×2", "つくえ×1", "すいしょうだま×1"],
+      "required_items_en": ["Seat x2", "Table x1", "Crystal Ball x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 153,
+      "name_ja": "ゴミ捨て場のテレビ",
+      "name_en": "Trash site TV",
+      "required_items_ja": ["ゴミぶくろ×2", "テレビ×1"],
+      "required_items_en": ["Garbage Bags x2", "TV x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 154,
+      "name_ja": "調査中",
+      "name_en": "Oversized dumping ground",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Under investigation (調査中)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 155,
+      "name_ja": "相棒と取り調べ",
+      "name_en": "Interrogation desk",
+      "required_items_ja": ["ウィンディにんぎょう×1", "パイプイス×2", "インダストリアルなデスク×1", "デスクライト×1"],
+      "required_items_en": ["Arcanine Doll x1", "Folding Chair x2", "Industrial Desk x1", "Desk Lamp x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 156,
+      "name_ja": "マンホール点検中",
+      "name_en": "Sewer hole inspection",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 157,
+      "name_ja": "ピカピカ洗面所",
+      "name_en": "Spotless Washing station",
+      "required_items_ja": ["カベかけタオル×1", "カベかけかがみ×1", "せんめんだい×1"],
+      "required_items_en": ["Wall Towel x1", "Wall Mirror x1", "Washbasin x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 158,
+      "name_ja": "ホームシアター",
+      "name_en": "Home theater",
+      "required_items_ja": ["スピーカー×2", "だい×1", "テレビ×1"],
+      "required_items_en": ["Speaker x2", "Stand x1", "TV x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 159,
+      "name_ja": "勉強スペース",
+      "name_en": "Study Area",
+      "required_items_ja": ["ほんだな×1", "イス×1", "つくえ×1", "えんぴついれ×1"],
+      "required_items_en": ["Bookcase x1", "Seat x1", "Table x1", "Pencil Case x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 160,
+      "name_ja": "リズミカルなリビング",
+      "name_en": "Rhythmic Living room",
+      "required_items_ja": ["スピーカー×2", "おんぷマット×4", "テレビ×1"],
+      "required_items_en": ["Speaker x2", "Music Note Mat x4", "TV x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 161,
+      "name_ja": "キュキュッとお掃除",
+      "name_en": "Squeaky clean",
+      "required_items_ja": ["バスタブ×1", "おそうじセット×1"],
+      "required_items_en": ["Bathtub x1", "Cleaning Set x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 162,
+      "name_ja": "しっとり化粧台",
+      "name_en": "Moisturizing makeup stand",
+      "required_items_ja": ["ドレッサー×1", "イス×1", "かしつき×1"],
+      "required_items_en": ["Dresser x1", "Seat x1", "Humidifier x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 163,
+      "name_ja": "プチ図書館",
+      "name_en": "Mini library",
+      "required_items_ja": ["ほんだな×2", "きゃたつ×1", "つくえ×1", "明かり×1"],
+      "required_items_en": ["Bookcase x2", "Stepladder x1", "Table x1", "Light x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 164,
+      "name_ja": "ゲームコーナーで対戦",
+      "name_en": "Game Corner battle zone",
+      "required_items_ja": ["アーケードゲームマシン×2", "イス×1"],
+      "required_items_en": ["Arcade Machine x2", "Seat x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 165,
+      "name_ja": "プレイランド",
+      "name_en": "Playland",
+      "required_items_ja": ["すべりだい×1", "おもちゃ×1"],
+      "required_items_en": ["Slide x1", "Toy x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 166,
+      "name_ja": "おしごとデスク",
+      "name_en": "Work desk",
+      "required_items_ja": ["オフィスのデスク×1", "ノートパソコン×1", "マグカップ×1", "オフィスのイス×1"],
+      "required_items_en": ["Office Desk x1", "Laptop x1", "Mug x1", "Office Chair x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 167,
+      "name_ja": "オフィスのバックヤード",
+      "name_en": "Office storeroom",
+      "required_items_ja": ["オフィスのたな×1", "きゃたつ×1", "だんボールのはこ×1"],
+      "required_items_en": ["Office Shelf x1", "Stepladder x1", "Cardboard Box x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 168,
+      "name_ja": "実験スペース",
+      "name_en": "Experiment Space",
+      "required_items_ja": ["じっけんセット×1", "ろんぶん×1", "けんびきょう×1"],
+      "required_items_en": ["Experiment Set x1", "Research Paper x1", "Microscope x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 169,
+      "name_ja": "はかせを目指して 研究中",
+      "name_en": "Professor's apprentice program",
+      "required_items_ja": ["ホワイトボード×1", "つくえ×1", "からまりコード×1", "ノートパソコン×1"],
+      "required_items_en": ["Whiteboard x1", "Table x1", "Jumbled Cords x1", "Laptop x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 170,
+      "name_ja": "研究者のデスク",
+      "name_en": "Researcher's desk",
+      "required_items_ja": ["つくえ×2", "コンピューター×1", "じっけんセット×1"],
+      "required_items_en": ["Table x2", "Computer x1", "Experiment Set x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 171,
+      "name_ja": "ご自由にお読みください",
+      "name_en": "Public reading material",
+      "required_items_ja": ["ざっしだな×1", "しんぶん×1"],
+      "required_items_en": ["Magazine Rack x1", "Newspaper x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 172,
+      "name_ja": "ドコドコびっくり箱",
+      "name_en": "Heart-pounding surprise box",
+      "required_items_ja": ["スポットライト×2", "びっくりばこ×1", "おおだいこ×1"],
+      "required_items_en": ["Spotlight x2", "Boo-In-The-Box x1", "Large Drum x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 173,
+      "name_ja": "いたずらスイッチ",
+      "name_en": "Prank button",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 174,
+      "name_ja": "絶景の顔だしパネル",
+      "name_en": "Picturesque photo cutout board",
+      "required_items_ja": ["かおだしパネル×1", "高いところ×1", "スポットライト×2"],
+      "required_items_en": ["Photo Cutout Board x1", "High-up location x1", "Spotlight x2"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 175,
+      "name_ja": "タイヤ公園",
+      "name_en": "Tire Park",
+      "required_items_ja": ["すべりだい×1", "とびこえタイヤ×2", "タイヤ×1"],
+      "required_items_en": ["Slide x1", "Jump Tires x2", "Tire x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 176,
+      "name_ja": "自然の中のマーケット",
+      "name_en": "Nature's market",
+      "required_items_ja": ["大きな木×1", "おおきないし×1", "つくえ×2", "レジスター×1"],
+      "required_items_en": ["Large Tree x1", "Large Boulder x1", "Table x2", "Cash Register x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 177,
+      "name_ja": "工事現場のはつでん所",
+      "name_en": "Construction-site generator",
+      "required_items_ja": ["ようこうろ×1", "てつのあしば×2", "こんもりてつパイプ×1"],
+      "required_items_en": ["Furnace x1", "Iron Scaffolding x2", "Pipe Pile x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 178,
+      "name_ja": "道場でトレーニング",
+      "name_en": "Dojo training",
+      "required_items_ja": ["かけじく×2", "かいりきいわ×2"],
+      "required_items_en": ["Hanging Scroll x2", "Strength Rock x2"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 179,
+      "name_ja": "悪の組織のアジト",
+      "name_en": "Evil organization HQ",
+      "required_items_ja": ["はち植えの木×2", "ゴージャスなソファ×1", "ロケットだんのかべかけ×1"],
+      "required_items_en": ["Potted Plant x2", "Gorgeous Sofa x1", "Team Rocket Wall Decor x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 180,
+      "name_ja": "九つのほむら",
+      "name_en": "Nine flames",
+      "required_items_ja": ["かがりび×9"],
+      "required_items_en": ["Brazier x9"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 181,
+      "name_ja": "ぬいぐるみにかこまれて",
+      "name_en": "Plush central",
+      "required_items_ja": ["ウィンディにんぎょう×1", "ピカチュウにんぎょう×1", "カイリューにんぎょう×1", "イーブイにんぎょう×1"],
+      "required_items_en": ["Arcanine Doll x1", "Pikachu Doll x1", "Dragonite Doll x1", "Eevee Doll x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 182,
+      "name_ja": "バツグンのゲーム環境",
+      "name_en": "Gamer's paradise",
+      "required_items_ja": ["ゲーミングベッド×1", "ゲーミングパソコン×1", "ゲーミングチェア×1", "つくえ×1", "ゲーミングれいぞうこ×1"],
+      "required_items_en": ["Gaming Bed x1", "Gaming PC x1", "Gaming Chair x1", "Table x1", "Gaming Fridge x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 183,
+      "name_ja": "ポップ オブ ポップ",
+      "name_en": "Top pop",
+      "required_items_ja": ["ポップなベッド×1", "ポップなソファ×1", "ポップなテーブル×1"],
+      "required_items_en": ["Pop Bed x1", "Pop Sofa x1", "Pop Table x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 184,
+      "name_ja": "釣り堀",
+      "name_en": "Fishing pond",
+      "required_items_ja": ["つりざお×1", "イス×1", "みず×1"],
+      "required_items_en": ["Fishing Rod x1", "Seat x1", "Water x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 185,
+      "name_ja": "海釣り",
+      "name_en": "Ocean fishing spot",
+      "required_items_ja": ["つりざお×1", "イス×1", "うみのみず×1"],
+      "required_items_en": ["Fishing Rod x1", "Seat x1", "Ocean Water x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 186,
+      "name_ja": "沼釣り",
+      "name_en": "Marsh fishing spot",
+      "required_items_ja": ["つりざお×1", "イス×1", "どろみず×1"],
+      "required_items_en": ["Fishing Rod x1", "Seat x1", "Muddy Water x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 187,
+      "name_ja": "温泉釣り",
+      "name_en": "Hot-spring Fishing Spot",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Under investigation (調査中)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 188,
+      "name_ja": "マグマ釣り",
+      "name_en": "Magma fishing spot",
+      "required_items_ja": ["つりざお×1", "イス×1", "マグマ×1"],
+      "required_items_en": ["Fishing Rod x1", "Seat x1", "Lava x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 189,
+      "name_ja": "ハイなロックステージ",
+      "name_en": "Amped rock stage",
+      "required_items_ja": ["スピーカー×2", "ステージだい×1", "イカしたエレキギター×1", "スタンドマイク×1"],
+      "required_items_en": ["Speaker x2", "Small Stage x1", "Cool Electric Guitar x1", "Standing Mic x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources - likely Toxtricity (Amped Form)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 190,
+      "name_ja": "ローなロックステージ",
+      "name_en": "Low-key rock stage",
+      "required_items_ja": ["スピーカー×2", "ステージだい×1", "イカしたエレキベース×1", "スタンドマイク×1"],
+      "required_items_en": ["Speaker x2", "Small Stage x1", "Cool Electric Bass x1", "Standing Mic x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources - likely Toxtricity (Low Key Form)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 191,
+      "name_ja": "怨念の騎士の祭壇",
+      "name_en": "Malicious knight's shrine",
+      "required_items_ja": ["だいざ・てんじだい×1", "ノロイノヨロイ×1", "ふみいし×2", "かがりび×2"],
+      "required_items_en": ["Exhibition Stand x1", "Cursed Armor x1", "Stepping Stone x2", "Brazier x2"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 192,
+      "name_ja": "忠誠の騎士の祭壇",
+      "name_en": "Auspicious knight's shrine",
+      "required_items_ja": ["だいざ・てんじだい×1", "ふみいし×2", "イワイノヨロイ×1", "かがりび×2"],
+      "required_items_en": ["Exhibition Stand x1", "Stepping Stone x2", "Blessed Armor x1", "Brazier x2"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 193,
+      "name_ja": "ツバサのカセキ展示台",
+      "name_en": "Wing Fossil Display",
+      "required_items_ja": ["だいざ・てんじだい×1", "ツバサのカセキ各部×5"],
+      "required_items_en": ["Exhibition Stand x1", "Wing Fossil Parts x5"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed - likely Aerodactyl or fossil Pokemon",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 194,
+      "name_ja": "ずがいのカセキ展示台",
+      "name_en": "Skull Fossil display",
+      "required_items_ja": ["だいざ・てんじだい×1", "ずがいのカセキ×1"],
+      "required_items_en": ["Exhibition Stand x1", "Skull Fossil x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed - likely Cranidos/Rampardos",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 195,
+      "name_ja": "ずつきのカセキ展示台",
+      "name_en": "Headbutt Fossil display",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Under investigation (調査中)",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 196,
+      "name_ja": "たてのカセキ展示台",
+      "name_en": "Armor Fossil display",
+      "required_items_ja": ["だいざ・てんじだい×1", "たてのカセキ×1"],
+      "required_items_en": ["Exhibition Stand x1", "Armor Fossil x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed - likely Shieldon/Bastiodon",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 197,
+      "name_ja": "シールドのカセキ展示台",
+      "name_en": "Shield Fossil display",
+      "required_items_ja": ["だいざ・てんじだい×2", "シールドのカセキ各部×3"],
+      "required_items_en": ["Exhibition Stand x2", "Shield Fossil Parts x3"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 198,
+      "name_ja": "あごのカセキ展示台",
+      "name_en": "Jaw Fossil display",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Under investigation (調査中) - likely Tyrunt/Tyrantrum",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 199,
+      "name_ja": "ぼうくんのカセキ展示台",
+      "name_en": "Despot fossil display",
+      "required_items_ja": ["だいざ・てんじだい×2", "ぼうくんのカセキ各部×4"],
+      "required_items_en": ["Exhibition Stand x2", "Despot Fossil Parts x4"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 200,
+      "name_ja": "ヒレのカセキ展示台",
+      "name_en": "Sail Fossil display",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Under investigation (調査中) - likely Amaura/Aurorus",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 201,
+      "name_ja": "ツンドラのカセキ展示台",
+      "name_en": "Tundra fossil display",
+      "required_items_ja": ["だいざ・てんじだい×1", "ツンドラのカセキ各部×3"],
+      "required_items_en": ["Exhibition Stand x1", "Tundra Fossil Parts x3"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 202,
+      "name_ja": "はじけるブルー",
+      "name_en": "Boundless blue beverage",
+      "required_items_ja": ["イス×1", "つくえ×1", "クリームソーダ×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Cream Soda x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 203,
+      "name_ja": "シビれるポテト",
+      "name_en": "Electrifying potatoes",
+      "required_items_ja": ["イス×1", "つくえ×1", "フライドポテト×1"],
+      "required_items_en": ["Seat x1", "Table x1", "French Fries x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 204,
+      "name_ja": "もえるほどスパイシー",
+      "name_en": "Burning-hot spice",
+      "required_items_ja": ["イス×1", "つくえ×1", "ピザ×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Pizza x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 205,
+      "name_ja": "エレガントな昼下がり",
+      "name_en": "Elegant daytime treats",
+      "required_items_ja": ["イス×1", "つくえ×1", "アフタヌーンティーセット×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Afternoon Tea Set x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 206,
+      "name_ja": "ブラックな味わい",
+      "name_en": "Dark-chocolate cookies",
+      "required_items_ja": ["イス×1", "つくえ×1", "チョコクッキー×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Chocolate Cookie x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 207,
+      "name_ja": "緑のサンドイッチ",
+      "name_en": "Leafy greens sandwich",
+      "required_items_ja": ["イス×1", "つくえ×1", "サンドイッチ×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Sandwich x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 208,
+      "name_ja": "ヒンヤリかき氷",
+      "name_en": "Chilly shaved ice",
+      "required_items_ja": ["イス×1", "つくえ×1", "かきごおり×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Shaved Ice x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    },
+    {
+      "id": 209,
+      "name_ja": "ラブリーなケーキ",
+      "name_en": "Lovely ribbon cake",
+      "required_items_ja": ["イス×1", "つくえ×1", "リボンケーキ×1"],
+      "required_items_en": ["Seat x1", "Table x1", "Ribbon Cake x1"],
+      "pokemon": [],
+      "pokemon_note": "Pokemon data not yet confirmed from sources",
+      "weather_condition": null,
+      "time_condition": null
+    }
+  ],
+  "event_habitats": [
+    {
+      "id": "E001",
+      "name_ja": "調査中",
+      "name_en": "Yellow carpet",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Event-exclusive habitat"
+    },
+    {
+      "id": "E002",
+      "name_ja": "調査中",
+      "name_en": "Field-trip friends",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Event-exclusive habitat"
+    },
+    {
+      "id": "E003",
+      "name_ja": "タンポポとお昼ご飯",
+      "name_en": "Dandelion lunchtime",
+      "required_items_ja": ["調査中"],
+      "required_items_en": ["Under investigation"],
+      "pokemon": [],
+      "pokemon_note": "Event-exclusive habitat"
+    }
+  ],
+  "habitat_categories": {
+    "grass_habitats": {
+      "description": "Habitats based on different colored grass types",
+      "subcategories": {
+        "green_grass": {"ids": [1, 2, 3, 4, 5, 6, 7], "base_item_ja": "みどりのくさ"},
+        "yellow_grass": {"ids": [50, 51, 52, 53, 54, 55], "base_item_ja": "きいろのくさ"},
+        "red_grass": {"ids": [98, 99, 100, 101, 102, 103], "base_item_ja": "あかいくさ"},
+        "pink_grass": {"ids": [137, 138, 139, 140], "base_item_ja": "ピンクのくさ"},
+        "dry_grass": {"ids": [37], "base_item_ja": "かれたみどりのくさ"}
+      }
+    },
+    "flower_habitats": {
+      "description": "Habitats based on different flower types",
+      "subcategories": {
+        "wildflowers": {"ids": [8, 9, 10, 11, 12, 13, 14], "base_item_ja": "はらっぱのはな"},
+        "seashore_flowers": {"ids": [56, 57, 58], "base_item_ja": "うみべのはな"},
+        "mountain_flowers": {"ids": [104, 105, 106, 107], "base_item_ja": "いわばのはな"},
+        "floating_island_flowers": {"ids": [142, 143, 144], "base_item_ja": "うきしまのはな"}
+      }
+    },
+    "nature_habitats": {
+      "description": "Habitats based on natural terrain elements",
+      "subcategories": {
+        "moss": {"ids": [110, 111, 112], "base_item_ja": "コケ"},
+        "duckweed": {"ids": [109], "base_item_ja": "うきくさ"},
+        "vegetable_field": {"ids": [15, 108], "base_item_ja": "野菜畑"},
+        "hot_spring": {"ids": [78, 112, 113, 114], "base_item_ja": "温泉"},
+        "lava": {"ids": [115, 188], "base_item_ja": "マグマ"}
+      }
+    },
+    "furniture_set_habitats": {
+      "description": "Habitats based on themed furniture sets",
+      "ids": [44, 45, 46, 47, 48, 49, 94, 95, 96, 97, 134, 135, 136, 182, 183],
+      "examples": ["Log set", "Berry set", "Garden set", "Antique set", "Poke Ball set", "Cute set", "Resort set", "Gorgeous set", "Iron set", "Industrial set", "Gaming set", "Pop set"]
+    },
+    "food_and_dining_habitats": {
+      "description": "Habitats related to food, dining, and cooking",
+      "ids": [19, 20, 21, 67, 68, 69, 70, 79, 93, 119, 120, 121, 122, 123, 133, 202, 203, 204, 205, 206, 207, 208, 209]
+    },
+    "fossil_habitats": {
+      "description": "Habitats for displaying fossils - attract fossil Pokemon",
+      "ids": [193, 194, 195, 196, 197, 198, 199, 200, 201]
+    },
+    "fishing_habitats": {
+      "description": "Habitats based on fishing in different water types",
+      "ids": [184, 185, 186, 187, 188]
+    },
+    "music_and_entertainment_habitats": {
+      "description": "Habitats related to music, performance, and entertainment",
+      "ids": [72, 85, 125, 126, 127, 128, 158, 160, 164, 189, 190]
+    },
+    "work_and_study_habitats": {
+      "description": "Habitats related to offices, research, and study",
+      "ids": [159, 163, 166, 167, 168, 169, 170, 171]
+    },
+    "weather_dependent_habitats": {
+      "description": "Habitats that require specific weather Castform charms",
+      "ids": [40, 41, 42],
+      "weather_types": ["sunny", "rainy"]
+    },
+    "special_form_pokemon_habitats": {
+      "description": "Habitats that attract special form Pokemon unique to Pokopia",
+      "habitats": [
+        {"id": 43, "pokemon": "Professor Tangrowth (はかせモジャンボ)"},
+        {"id": 81, "pokemon": "Peakychu / Delivery Pikachu (おとどけピカチュウ)"},
+        {"id": 92, "pokemon": "Smearguru / Artist Smeargle (えかきドーブル)"},
+        {"id": 93, "pokemon": "Mosslax / Moss Snorlax (コケカビゴン)"},
+        {"id": 128, "pokemon": "DJ Rotom (DJロトム)"}
+      ]
+    }
+  },
+  "cross_reference_notes": {
+    "numbering_discrepancy": "Some sources list habitat 210 (ハイなロックステージ / Amped rock stage) separately, while Serebii's list shows 189 as Amped rock stage and 190 as Low-key rock stage. The Gamepedia tools source lists up to 214. The numbering may differ slightly between sources.",
+    "incomplete_data": "Habitats 133-209 have Japanese names and item requirements from Japanese sources, but Pokemon spawn data was not fully available from the fetched pages for these higher-numbered habitats. The English Game8 page data was truncated at habitat 132.",
+    "under_investigation": "Several habitats are marked as '調査中' (under investigation) in Japanese sources, indicating the community is still documenting them: 146, 148, 154, 156, 173, 187, 195, 198, 200",
+    "event_habitats": "3 event habitats (E001-E003) exist but have limited documentation. E003 appears to be タンポポとお昼ご飯 (Dandelion lunchtime) based on one source.",
+    "serebii_vs_gamepedia": "Serebii lists 209 standard + 3 event = 212 total. The Gamepedia tools source lists items up to 214, possibly including unreleased or datamined habitats.",
+    "data_quality_warning": "Pokemon lists for habitats 1-132 are well-verified across multiple sources (Game8 EN, Game8 JP, GameWith, Pokeraku). Habitats 133-209 need additional cross-verification with Korean and English sources."
+  }
+}
